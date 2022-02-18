@@ -1,0 +1,78 @@
+.content {
+  position: relative;
+  padding: 0px 30px;
+  min-height: 400px;
+}
+
+.containerImg {
+  margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.swiper {
+  padding: 5px 5px 10px 5px;
+  width: 100%;
+  height: auto;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0, 0.15);
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  justify-self: stretch;
+  min-height: 350px;
+}
+.slideContent {
+  padding: 0px 15px 16px 15px;
+  text-align: start;
+}
+
+.cardTitle{
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: rgba(0,0,0, 0.7);
+  position: absolute;
+  z-index: 10;
+}
+.buttonPrev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+
+}
+.buttonNext {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+}
+.button svg path {
+  fill: var(--white);
+}
