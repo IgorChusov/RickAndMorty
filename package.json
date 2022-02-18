@@ -6,6 +6,7 @@
   "engines": {
     "node": "14.x"
   },
+
   "scripts": {
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
