@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
-    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development node ./bin/dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/server/server.js"
   },
   "author": "ChusovIgor",
   "license": "ISC",
@@ -25,9 +29,7 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
-    "swiper": "^6.8.4"
-  },
-  "devDependencies": {
+    "swiper": "^6.8.4",
     "@hot-loader/react-dom": "^17.0.1",
     "@types/classnames": "^2.3.1",
     "@types/react": "^17.0.37",

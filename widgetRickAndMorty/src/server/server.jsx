@@ -4,6 +4,7 @@ import ReactDOMServer from 'react-dom/server';
 import { App } from '../App';
 import { indexTemplate } from './indexTemplate'
 import { StaticRouter} from "react-router";
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use('/static', express.static('./dist/client'))
@@ -17,6 +18,6 @@ app.get('*', (req, res) => {
       )),)
 })
 
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000')
+app.listen(PORT, () => {
+  console.log(`Server started on http://localhost:${PORT}`)
 })
